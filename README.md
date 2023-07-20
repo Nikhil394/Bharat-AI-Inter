@@ -1,1 +1,1 @@
-# Bharat-AI-Inter
+# Bharat-AI-Intern
