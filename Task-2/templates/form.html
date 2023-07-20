@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Auto Correct Tool</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        div{
+            text-align: center;
+        }
+        h1 {
+            text-align: center;
+            color: #007BFF;
+        }
+        label {
+            font-weight: bold;
+            text-align: center;
+        }
+        input[type="text"] {
+            width: 300px;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            text-align: center;
+        }
+        input[type="submit"] {
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            text-align: center;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Auto Correct Tool</h1>
+    <form action="/process" method="post">
+        <div>
+        <label for="incorrect_para">Enter sentence:</label>
+        <br>
+        <input type="text" id="incorrect_para" name="incorrect_para" required>
+        <br><br>
+        <input type="submit" value="Submit">
+    </div>
+    </form>
+</body>
+</html>
