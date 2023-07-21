@@ -18,6 +18,7 @@ def Translate():
     global detect_lang 
     detect_lang =  constants.LANGUAGES[translation.src]
     Label(window,text=detect_lang).grid(row=3,column=0)
+    Label(window,text=constants.LANGUAGES[translation.dest]).grid(row=3,column=3)
     OutputVar.set(translation.text)
 
 NewLanguageChoiceMenu = OptionMenu(window,TranslateLanguageChoice,*LanguageChoices)
